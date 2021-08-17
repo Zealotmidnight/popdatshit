@@ -7,7 +7,7 @@ start = async () => {
   await p.goto('https://popcat.click/', { waitUntil: 'networkidle0' })
   console.log('Ready?')
 
-  for (let i = 0; i < 10000; i++) {
+  for (let i = 0; i < 1000000; i++) {
     await p.click('[id="app"]')
   }
 }
